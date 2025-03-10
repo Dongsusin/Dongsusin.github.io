@@ -207,7 +207,7 @@ li{
 /*background*/
 body {
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -230,12 +230,12 @@ body {
   position: relative;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   transition: 0.5s;
 }
 .scrollc{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +376,7 @@ main p{
 /*about*/
 #about{
   width: 100%;
-  height: 100vh;
+  height: auto;
   opacity: 0;
   animation: fadeOutText 1s 4s ease-out forwards;
 }
@@ -576,4 +576,60 @@ section.Contect .contact-me .right .form-group{
   background-image: linear-gradient(to top, #0059ff 0%, #6991c7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+/*반응형*/
+@media screen and (max-width:1140px) {
+  section .about-self .left{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  section .about-self .right{
+    width: 100%;
+    padding: 0;
+  }
+  section .skill{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+  section .slider__wra{
+  max-width: 1000px;
+  max-height: 500px;
+  }
+}
+@media screen and (max-width:992px) {
+  html{
+    font-size: 11px;
+  }
+  section .slider__wra{
+    max-width: 900px;
+    max-height: 450px;
+    }
+}
+@media screen and (max-width:768px) {
+  html{
+    font-size: 10px;
+  }
+  section .slider__wra{
+    max-width: 800px;
+    max-height: 400px;
+    }
+}
+@media screen and (max-width:576px) {
+  html{
+    font-size: 9px;
+  }
+  section .slider__wra{
+    max-width: 750px;
+    max-height: 350px;
+    }
+}
+@media screen and (max-width:400px) {
+  html{
+    font-size: 8px;
+  }
+  section .slider__wra{
+    max-width: 700px;
+    max-height: 300px;
+    }
 }
