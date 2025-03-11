@@ -35,7 +35,7 @@ li{
 }
 .letter {
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(50%);
 }
 .article.show .letter {
   display: inline-block;
@@ -53,6 +53,9 @@ li{
 .page{
   opacity: 0;
   animation: fadeOutText 1s 4s ease-out forwards;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: url(./이미지/밤하늘반사.jpg);
 }
 .name{
   padding-top: 3rem;
@@ -68,7 +71,7 @@ li{
 #intro{
   position: fixed;
   left: 50%;
-  top: 65%;
+  top: 50%;
   opacity: 1;
   animation: fadeInText 3s 2s ease-out forwards;
 }
@@ -323,7 +326,7 @@ header button:hover{
   color: white;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 100;
   width: auto;
   padding: 1.5rem;
   opacity: 0;
@@ -346,9 +349,215 @@ header button:hover{
 body{
   width: 100vw;
   height: 100vh;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-image: url(./이미지/밤하늘.jpg);
+  background-size: cover;
+  background: linear-gradient(to right, #111, #0e0f19);
+}
+/*star*/
+#star{
+  opacity: 0;
+  animation: fadeOutText 1s 4s ease-out forwards;
+}
+.twinkle {
+  top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.twinkle .star {
+  height: 5px;
+  width:5px;
+  border: 1px solid rgb(255, 243, 110);
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  animation: star 100s linear infinite;
+}
+.twinkle .star:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.twinkle .star:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation-duration: 10s;
+}
+.twinkle .star:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation-duration: 3s;
+}
+.twinkle .star:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation-duration: 7s;
+}
+.twinkle .star:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation-duration: 9s;
+}
+.twinkle .star:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation-duration: 5s;
+}
+.twinkle .star:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.twinkle .star:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation-duration: 10s;
+}
+.twinkle .star:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation-duration: 6s;
+}
+.twinkle .star:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation-duration: 10s;
+}
+.twinkle .star:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation-duration: 9s;
+}
+.twinkle .star:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation-duration: 7s;
+}
+.twinkle .star:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.twinkle .star:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation-duration: 6s;
+}
+.twinkle .star:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation-duration: 9s;
+}
+@keyframes star {
+  0% {
+    transform: scale(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3)  rotate(360deg);
+  }
+}
+/*bubble*/
+#bubble{
+  opacity: 0;
+  animation: fadeOutText 1s 4s ease-out forwards;
+}
+.wrapper {
+  top:200%;
+  height: 250%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.wrapper .bubble {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgb(144, 255, 253);
+  border-radius: 50%;
+  position: absolute;
+  animation: animate 10s linear infinite;
+}
+.wrapper .bubble:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.wrapper .bubble:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation-duration: 10s;
+}
+.wrapper .bubble:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation-duration: 3s;
+}
+.wrapper .bubble:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation-duration: 7s;
+}
+.wrapper .bubble:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation-duration: 9s;
+}
+.wrapper .bubble:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation-duration: 5s;
+}
+.wrapper .bubble:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.wrapper .bubble:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation-duration: 10s;
+}
+.wrapper .bubble:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation-duration: 6s;
+}
+.wrapper .bubble:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation-duration: 10s;
+}
+.wrapper .bubble:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation-duration: 9s;
+}
+.wrapper .bubble:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation-duration: 7s;
+}
+.wrapper .bubble:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation-duration: 8s;
+}
+.wrapper .bubble:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation-duration: 6s;
+}
+.wrapper .bubble:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation-duration: 9s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
 }
 /*main*/
 #main {
@@ -358,6 +567,8 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-size: 100% 100%;
+  background-image: url(./이미지/밤하늘.jpg);
 }
 #main .article{
   width: 100vw;
