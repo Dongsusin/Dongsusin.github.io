@@ -129,13 +129,3 @@ $(document).ready(function($) {
       $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 });
-
-/*bubble z-index*/
-let isBox = $box.classList.contains('main.show');
-function bubbleindex(){
-  if (isBox) {
-    changezindex0()
-  } else {
-    changezindex1()
-  }
-}
