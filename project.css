@@ -351,6 +351,15 @@ body{
   height: 100vh;
   background-size: cover;
   background: linear-gradient(to right, #111, #0e0f19);
+  cursor:url('./이미지/커서.png') 1 1,auto;  
+}
+body button:hover{
+  cursor:url('./이미지/호버커서.png') 1 1,auto;  
+}
+#upper{
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: url(./이미지/밤하늘.jpg);
 }
 /*star*/
 #star{
@@ -452,8 +461,11 @@ body{
   0% {
     transform: scale(0) rotate(70deg);
   }
-  100% {
+  50%{
     transform: scale(1.3)  rotate(360deg);
+  }
+  100% {
+    transform: scale(0)  rotate(360deg);
   }
 }
 /*bubble*/
@@ -462,8 +474,9 @@ body{
   animation: fadeOutText 1s 4s ease-out forwards;
 }
 .wrapper {
-  top:200%;
-  height: 250%;
+  top:400%;
+  bottom: 25%;
+  height: 75%;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -568,7 +581,7 @@ body{
   align-items: center;
   text-align: center;
   background-size: 100% 100%;
-  background-image: url(./이미지/밤하늘.jpg);
+  background-image: url(./이미지/밤하늘달.png);
 }
 #main .article{
   width: 100vw;
@@ -688,6 +701,7 @@ section .about-self .right p{
   display: flex;
   align-items: center;
   text-align: center;
+
 }
 #skill .name{
   top: 0;
@@ -695,13 +709,16 @@ section .about-self .right p{
 .slidewrap{
   margin-top: 10rem;
   width: 75%;
-  position: absolute;
   overflow: hidden;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: absolute;
+}
+.slidewrap button{
+  color: black;
 }
 .slides{
   width: 100%;
@@ -754,7 +771,7 @@ section .about-self .right p{
   transform: translate(-50%, -15%);
   width: 75%;
   height: 500px;
-  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4); 
 }
 .slider__img {
     position: center;
@@ -793,9 +810,9 @@ section .about-self .right p{
 }
 .slider__thumb img.active {
   width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border: 2px solid #fff;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid #fff;
 }
 /*comtact*/
 #contact{
@@ -803,6 +820,8 @@ section .about-self .right p{
   height: auto;
   opacity: 0;
   animation: fadeOutText 1s 4s ease-out forwards;
+  background-size: 100% 100%;
+  background-image: url(./이미지/반하늘반사달.png);
 }
 #contact .contact-me{
   flex: 0 0 100%;

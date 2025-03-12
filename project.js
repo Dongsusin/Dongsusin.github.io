@@ -47,8 +47,8 @@ function AddStyle(style){
     document.head.appendChild(styleTag);
 }
 function Createbtn(){
-    slidewrap.innerHTML += `<div class="leftbtn btn">이전</div>`;
-    slidewrap.innerHTML += `<div class="rightbtn btn">다음</div>`;
+    slidewrap.innerHTML += `<button class="leftbtn btn">이전</button>`;
+    slidewrap.innerHTML += `<button class="rightbtn btn">다음</button>`;
     const BtnStyle = `
         .btn {
             display : flex;
